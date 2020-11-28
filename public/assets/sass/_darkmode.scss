@@ -1,0 +1,146 @@
+$darkmodeDark: #172331;
+$darkmodeContentBg: #1B2A38;
+
+$colorHeading: #ffffff;
+$colorText: #8195A6;
+$colorLight: #586D7F;
+$colorLine: #293949;
+
+
+body,
+body.bg-light{
+  background: $darkmodeDark !important;
+}
+.appHeader {
+  background: $darkmodeDark !important;
+}
+.appBottomMenu {
+  background: $darkmodeDark !important;
+}
+.accordion {
+  background: $darkmodeContentBg !important;
+  .btn {
+    color: #fff;
+  }
+}
+.wide-block {
+  background: $darkmodeContentBg !important;
+}
+.modal{
+    background: rgba($darkmodeDark,.4);
+    .modal-dialog{
+        .modal-content{
+            background: $darkmodeContentBg !important;
+        }
+    }
+}
+.modal.action-sheet{
+    .modal-header{
+        border-bottom: 1px solid rgba(255,255,255,.1) !important;
+    }
+}
+.card{
+    background: $darkmodeContentBg !important;
+    border-color: $colorLine !important;
+}
+.listview{
+    background: $darkmodeContentBg !important;
+}
+.dialogbox{
+    .modal-footer{
+        .btn{
+            color: #FFF;
+        }
+    }
+}
+.dropdown-menu{
+    background: $darkmodeDark;
+    border-color: $colorLine !important;
+    .dropdown-divider{
+        border-top-color: $colorLine;
+    }
+}
+.form-button-group,
+.chatFooter,
+.extraHeader{
+    background: $darkmodeDark !important;
+}
+.modalbox{
+    .modal-header{
+        background: $darkmodeDark !important;
+    }
+}
+.searchbox{
+    .form-control{
+        background: rgba(255,255,255,.1);
+        color: #FFF;
+        border-color: rgba(255,255,255,.05) !important;
+        &:focus{
+            border-color: rgba(255,255,255,.1) !important
+        }
+    }
+    .close{
+        text-shadow: none !important;
+    }
+}
+.nav-tabs.style1{
+    .nav-link.active{
+        background: rgba(255,255,255,.15);
+    }
+}
+.appFooter{
+    background: $darkmodeDark !important;
+}
+.appBottomMenu.bg-light .item{
+    .icon,
+    strong{
+        color: $darkmodeDark !important;
+    }
+}
+.appHeader.bg-light{
+    color: $darkmodeDark !important;
+}
+.alert-light{
+    background: rgba(255,255,255,.5) !important;
+}
+.card.bg-light{
+    background: #FFF !important;
+    color: $darkmodeContentBg;
+    .card-header{
+        color: $darkmodeContentBg;
+        border-bottom-color: rgba($darkmodeDark,.1);
+    }
+    .card-title{
+        color: $darkmodeContentBg;
+    }
+}
+.custom-control{
+    .custom-control-label{
+        &:before{
+            border-color: rgba(255,255,255,.2) !important;
+        }
+    }
+}
+.form-group{
+    label{
+        color: rgba(255,255,255,.5) !important
+    }
+}
+.form-group.boxed{
+    .form-control{
+        background: rgba(255,255,255,.1) !important;
+        border-color: rgba(255,255,255,.15) !important;
+        color: #FFF;
+    }
+}
+.progress{
+    background: rgba(255,255,255,.2);
+}
+#loader{
+    background: $darkmodeDark !important;
+}
+.nav-tabs.lined{
+    .nav-link.active{
+        background: transparent;
+    }
+}

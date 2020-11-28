@@ -1,0 +1,22 @@
+
+.profileBox {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $colorLine;
+  .image-wrapper {
+    margin-right: 16px;
+  }
+  .in {
+    line-height: 1.2em;
+    strong {
+      display: block;
+      font-weight: $medium;
+      color: $colorHeading;
+    }
+    .text-muted {
+      font-size: 14px;
+      color: $colorLight !important;
+    }
+  }
+}

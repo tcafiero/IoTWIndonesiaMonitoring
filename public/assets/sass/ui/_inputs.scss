@@ -1,0 +1,119 @@
+.form-group {
+  width: 100%;
+  .label {
+    font-size: $fontSizeCaption;
+    margin: 0;
+    font-weight: $medium;
+    color: $colorHeading;
+    display: block;
+    line-height: 1.2em;
+  }
+  textarea{
+    resize: none;
+  }
+  .input-info {
+    font-size: $fontSizeCaption;
+    color: $colorLight;
+  }
+  .clear-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $colorText;
+    height: 38px;
+    font-size: 22px;
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 32px;
+    opacity: 0.5;
+    display: none;
+    &:hover,
+    &:active {
+      opacity: 0.8;
+    }
+  }
+  .input-wrapper {
+    position: relative;
+    &.not-empty {
+      .clear-input {
+        display: flex;
+      }
+    }
+    &.active {
+      .label {
+        color: $colorPrimary !important;
+      }
+    }
+  }
+}
+
+.form-group.basic {
+  padding: 8px 0;
+  margin: 0;
+  .form-control,
+  .custom-select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $colorLine;
+    padding: 0 30px 0 0;
+    border-radius: 0;
+    height: 40px;
+    color: $colorHeading;
+    font-size: $fontSize;
+    &:focus {
+      border-bottom-color: $colorPrimary;
+      box-shadow: inset 0 -1px 0 0 $colorPrimary;
+    }
+  }
+  textarea.form-control{
+    height: auto;
+    padding: 7px 40px 7px 0;
+}
+}
+.form-group.basic.animated {
+  .label {
+    margin-top: 20px;
+    opacity: 0;
+    top: -3px;
+    transition: 0.2s all;
+    position: absolute;
+  }
+  .input-wrapper {
+    padding-top: 5px;
+    &.not-empty {
+      .label {
+        margin-top: 0;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.form-group.boxed{
+    margin: 0;
+    padding: 8px 0;
+    .form-control{
+        background: #FFF;
+        box-shadow: none;
+        height: 42px;
+        border-radius: $borderRadius;
+        padding: 0 40px 0 16px;
+        &:focus{
+            border-color: $colorPrimary;
+        }
+    }
+    textarea.form-control{
+        height: auto;
+        padding: 7px 40px 7px 16px;
+    }
+    .clear-input{
+        right: 0;
+        height: 42px;
+        width: 40px;
+    }
+    .label{
+        margin-bottom: 8px;
+    }
+}

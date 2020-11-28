@@ -1,0 +1,19 @@
+// Google font
+// Import google font url below if you are using google font and change it $fontFamily variable.
+// @import url(' Google font url here ');
+
+
+// Font Family and Size
+$fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+$fontSizeHeadingXLarge: 32px;
+$fontSizeHeadingLarge: 24px;
+$fontSizeHeading: 18px;
+$fontSize: 16px;
+$fontSizeSub: 14px;
+$fontSizeCaption: 12px;
+
+// Define font weight
+// We use this variable for font weights.
+$regular : 400; // font regular
+$medium : 500; // font medium (if font does not support medium, define the semibold)
+$bold : 700; // font bold or black
