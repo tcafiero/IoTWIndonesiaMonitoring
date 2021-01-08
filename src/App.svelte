@@ -5,29 +5,31 @@ import IoTwAppBottomMenu from './IoTwAppBottomMenu.svelte';
 import IoTwAppName from './IoTwAppName.svelte';
 import IoTwAppFooter from './IoTwAppFooter.svelte';
 import IoTwAppDevStatus from './IoTwAppDevStatus.svelte';
-import PlotTemperature from './plotTemperature.svelte';
-import PlotHumidity from './plotHumidity.svelte';
-import PlotPAR from './plotPAR.svelte';
+import PlotUnit_2 from './plotUnit_2.svelte';
+import PlotUnit_3 from './plotUnit_3.svelte';
+import PlotUnit_1 from './plotUnit_1.svelte';
 import {state} from './stores';
 import {previousState} from './stores';
 import {bottomMenu} from './stores';
 import {id} from './stores';
 import {battery} from './stores';
 import {connection} from './stores';
-$state="PlotPAR";
+import {days} from './stores';
+import {filter} from './stores';
+$state="PlotUnit_1";
 $connection=undefined;
 $id="Not connected";
 $battery="unknown";
 
 $bottomMenu = [
-{description: "Light", icon: "icon ion-ios-exit", function: function () {
-	$state="PlotPAR";
+{description: "Unit1", icon: "icon ion-ios-exit", function: function () {
+	$state="PlotUnit_1";
 	}},
-{description: "Temperature", icon: "icon ion-ios-exit", function: function () {
-	$state="PlotTemperature";
+{description: "Unit_2", icon: "icon ion-ios-exit", function: function () {
+	$state="PlotUnit_2";
 	}},
-{description: "Humidity", icon: "icon ion-ios-exit", function: function () {
-	$state="PlotHumidity";
+{description: "Unit_3", icon: "icon ion-ios-exit", function: function () {
+	$state="PlotUnit_3";
 	}}
 ];
 
@@ -65,12 +67,12 @@ function download() {}
 <div id="appCapsule">
 	<section id="MenuSection" class="visible">
 		<div>
-			   {#if $state === "PlotTemperature"}
-				<PlotTemperature />
-			   {:else if $state === 'PlotHumidity'}
-				<PlotHumidity />
-			   {:else if $state === 'PlotPAR'}
-				<PlotPAR />
+			   {#if $state === "PlotUnit_2"}
+				<PlotUnit_2 />
+			   {:else if $state === 'PlotUnit_3'}
+				<PlotUnit_3 />
+			   {:else if $state === 'PlotUnit_1'}
+				<PlotUnit_1 />
 				{:else}
 				<div>Questionable choice.</div>
 			{/if}

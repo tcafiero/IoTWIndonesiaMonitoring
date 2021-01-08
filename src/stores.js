@@ -1,4 +1,6 @@
 import {writable} from 'svelte/store';
+export const filter = writable(" ");
+export const days = writable("1");
 
 export const func = writable("empty");
 export const id = writable("");
