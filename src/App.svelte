@@ -22,13 +22,13 @@ $id="Not connected";
 $battery="unknown";
 
 $bottomMenu = [
-{description: "Unit1", icon: "icon ion-ios-exit", function: function () {
+{description: "Pekanbaru", icon: "icon ion-ios-exit", function: function () {
 	$state="PlotUnit_1";
 	}},
-{description: "Unit_2", icon: "icon ion-ios-exit", function: function () {
+{description: "RW3", icon: "icon ion-ios-exit", function: function () {
 	$state="PlotUnit_2";
 	}},
-{description: "Unit_3", icon: "icon ion-ios-exit", function: function () {
+{description: "RW4", icon: "icon ion-ios-exit", function: function () {
 	$state="PlotUnit_3";
 	}}
 ];
@@ -50,10 +50,10 @@ function download() {}
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Ruuvi Data Logger Manager</title>
+    <title>Bestico IoT Sensors Management System</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Ruuvi Data Logger Manager" />
+    <meta name="description" content="Bestico IoT Sensors Monitoring" />
     <meta name="keywords" content="bootstrap, mobile template, cordova, phonegap, mobile, html, responsive" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/Cloud.png" />
     <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32" />
