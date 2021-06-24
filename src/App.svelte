@@ -22,7 +22,7 @@ $id="Not connected";
 $battery="unknown";
 
 $bottomMenu = [
-{description: "Pekanbaru", icon: "icon ion-ios-exit", function: function () {
+{description: "Greenhouse.1", icon: "icon ion-ios-exit", function: function () {
 	$state="PlotUnit_1";
 	}},
 {description: "RW3", icon: "icon ion-ios-exit", function: function () {

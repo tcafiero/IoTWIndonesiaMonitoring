@@ -16,7 +16,7 @@
 <script>
 	let channel=1319779;
 	let API_key='Z536VL02THM6EAOX';
-	let titleUnit = "Pekanbaru - RW3";
+	let titleUnit = "Greenhouse.1 - RW3";
 	let fieldpH = 2;
 	let fieldTemperature = 1;
 	let dynamic = false;

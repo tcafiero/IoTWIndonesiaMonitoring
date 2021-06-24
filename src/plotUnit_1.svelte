@@ -16,7 +16,7 @@
 <script>
 	let channel=1109326;
 	let API_key='T0ITZUOTU0397ZLT';
-	let titleUnit = "Bestico - Pekanbaru";
+	let titleUnit = "Bestico Greenhouse.1";
 	let chartPAR = 3;
 	let chartTemp = 1;
 	let chartHum = 2;
