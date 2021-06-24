@@ -8,15 +8,16 @@
 <input type="checkbox" id="myCheck" on:click={setFilter}>
 <div id="chart">
 <iframe width="85%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/{channel}/charts/{fieldTemperature}?api_key={API_key}&width=auto&heigth=auto&bgcolor=%23ffffff&color=%23d62020&days={$days}&dynamic={dynamic}&yaxismax=50&yaxismin=10&{$filter}&title={titleTemperature}&type=spline&update=15&yaxis=%C2%B0C"></iframe>
-<iframe width="85%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/{channel}/charts/{fieldpH}?api_key={API_key}&width=auto&heigth=auto&bgcolor=%23ffffff&color=%23d62020&days={$days}&dynamic={dynamic}&yaxismax=11&yaxismin=4&{$filter}&title={titlepH}&type=spline&update=15&yaxis=pH"></iframe>
+<iframe width="85%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/{channel}/charts/{fieldpH}?api_key={API_key}&width=auto&heigth=auto&bgcolor=%23ffffff&color=%23d62020&days={$days}&dynamic={dynamic}&yaxismax=11&yaxismin=9&{$filter}&title={titlepH}&type=spline&update=15&yaxis=pH"></iframe>
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1319779/charts/2?bgcolor=%23ffffff&color=%23d62020&days=3&dynamic=false&title=RW3+-+pH+&type=line&yaxis=pH&yaxismax=14.0&yaxismin=0.0"></iframe>
 
 </div>
 </section>
 
 <script>
 	let channel=1319779;
-	let API_key='E755J766RHDJHGU7';
-	let titleUnit = "Greenhouse.1 - RW3.a";
+	let API_key='Z536VL02THM6EAOX';
+	let titleUnit = "Greenhouse.1 - RW3";
 	let fieldpH = 2;
 	let fieldTemperature = 1;
 	let dynamic = false;
