@@ -1,7 +1,7 @@
 <!-- app footer -->
 <div class="appFooter">
 	<div class="footer-title">
-		Copyright © IoThingsWare 2020. All Rights Reserved.
+		Copyright © IoThingsWare 2021. All Rights Reserved.
 	</div>
 	<div>
 	www.iothingsware.com - Email: info@iothingsware.com

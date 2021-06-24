@@ -4,7 +4,7 @@ const CACHE = "pwabuilder-page";
 // CODELAB: Add list of files to cache here.
 
 const FILES_TO_CACHE = [
-'/index.html',
+//'/index.html',
 '/global.css',
 '/assets/css/style.css',
 '/assets/css/ionicons.min.css',
@@ -23,9 +23,9 @@ const FILES_TO_CACHE = [
 '/assets/js/lib/bootstrap.min.js',
 '/assets/js/lib/jquery-3.4.1.min.js',
 '/assets/js/lib/popper.min.js',
-'/assets/js/plugins/owl-carousel/owl.carousel.min.js',
-'/build/bundle.css',
-'/build/bundle.js'
+'/assets/js/plugins/owl-carousel/owl.carousel.min.js'
+//'/build/bundle.css',
+//'/build/bundle.js'
 ];
 
 
