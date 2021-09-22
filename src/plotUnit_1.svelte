@@ -35,7 +35,7 @@ function setFilter() {
   if (document.getElementById("myCheck").checked == true){
     $filter = "median=60";
   } else {
-    $filter = " ";
+    $filter = "median=60";
   }
 }
 </script>
