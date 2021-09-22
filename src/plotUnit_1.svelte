@@ -26,6 +26,7 @@
 	let titleHum = titleUnit+" - "+"RH";
 	import {days} from './stores';
 	import {filter} from './stores';
+	$filter = "median=60";
 
 function setFilter() {
 
@@ -35,7 +36,7 @@ function setFilter() {
   if (document.getElementById("myCheck").checked == true){
     $filter = "median=60";
   } else {
-    $filter = "median=60";
+    $filter = " ";
   }
 }
 </script>
