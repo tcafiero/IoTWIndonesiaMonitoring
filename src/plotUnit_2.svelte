@@ -8,7 +8,7 @@
 <input type="checkbox" id="myCheck" on:click={setFilter}>
 <div id="chart">
 <iframe width="85%" height="260" style="border: 1px solid #cccccc;" src="  https://thingspeak.com/channels/{channel}/charts/{fieldTemperature}?api_key={API_key}&width=auto&heigth=auto&bgcolor=%23ffffff&color=%23d62020&days={$days}&dynamic={dynamic}&yaxismax=50&yaxismin=10&{$filter}&title={titleTemperature}&type=spline&update=1&yaxis=%C2%B0C"></iframe>
-<iframe width="85%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/{channel}/charts/{fieldpH}?api_key={API_key}&width=auto&heigth=auto&bgcolor=%23ffffff&color=%23d62020&days={$days}&dynamic={dynamic}&yaxismax=14&yaxismin=0&{$filter}&title={titlepH}&type=spline&update=1&yaxis=pH"></iframe>
+<iframe width="85%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/{channel}/charts/{fieldpH}?api_key={API_key}&width=auto&heigth=auto&bgcolor=%23ffffff&color=%23d62020&days={$days}&dynamic={dynamic}&yaxismax=11&yaxismin=8&{$filter}&title={titlepH}&type=spline&update=1&yaxis=pH"></iframe>
 
 </div>
 </section>
