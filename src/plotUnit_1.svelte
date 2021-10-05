@@ -9,8 +9,8 @@
 <div id="chart">
 <!-- <iframe width="85%" height="260" style="border: 1px solid #cccccc;" src="  https://thingspeak.com/channels/{channel}/charts/{chartPAR}?api_key={API_key}&width=auto&heigth=auto&bgcolor=%23ffffff&color=%23d62020&days={$days}&dynamic={dynamic}&yaxismax=2000&yaxismin=0&{$filter}&title={titlePAR}&type=spline&update=1&yaxis=PPFD"></iframe> -->
 <iframe width="85%" height="260" style="border: 1px solid #cccccc;" src="  https://thingspeak.com/channels/{channel}/charts/{chartPAR}?api_key={API_key}&width=auto&heigth=auto&bgcolor=%23ffffff&color=%23d62020&days={$days}&dynamic={dynamic}&yaxismax=2000&yaxismin=0&title={titlePAR}&type=spline&update=1&yaxis=PPFD"></iframe>
-<iframe width="85%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/{channel}/charts/{chartTemp}?api_key={API_key}&width=auto&heigth=auto&bgcolor=%23ffffff&color=%23d62020&days={$days}&dynamic={dynamic}&yaxismax=50&yaxismin=10&{$filter}&title={titleTemp}&type=spline&update=1&yaxis=%C2%B0C"></iframe>
-<iframe width="85%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/{channel}/charts/{chartHum}?api_key={API_key}&width=auto&heigth=auto&bgcolor=%23ffffff&color=%230033cc&days={$days}&dynamic={dynamic}&yaxismax=100&yaxismin=0&{$filter}&title={titleHum}&type=spline&update=1&yaxis=%25"></iframe>
+<iframe width="85%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/{channel}/charts/{chartTemp}?api_key={API_key}&width=auto&heigth=auto&bgcolor=%23ffffff&color=%23d62020&days={$days}&dynamic={dynamic}&yaxismax=50&yaxismin=10&median=60&title={titleTemp}&type=spline&update=1&yaxis=%C2%B0C"></iframe>
+<iframe width="85%" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/{channel}/charts/{chartHum}?api_key={API_key}&width=auto&heigth=auto&bgcolor=%23ffffff&color=%230033cc&days={$days}&dynamic={dynamic}&yaxismax=100&yaxismin=0&median=60&title={titleHum}&type=spline&update=1&yaxis=%25"></iframe>
 </div>
 </section>
 
@@ -27,7 +27,7 @@
 	let titleHum = titleUnit+" - "+"RH";
 	import {days} from './stores';
 	import {filter} from './stores';
-	$filter = "median=60";
+	$filter = " ";
 
 function setFilter() {
 
