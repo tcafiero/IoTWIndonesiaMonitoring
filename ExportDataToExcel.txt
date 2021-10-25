@@ -1,0 +1,17 @@
+
+Greenhouse.1
+https://api.thingspeak.com/channels/1109326/feeds.csv?api_key=T0ITZUOTU0397ZLT
+Field1: Temp
+field2: RH
+field3: PPFD
+
+RW3
+https://api.thingspeak.com/channels/1319779/feeds.csv?api_key=E755J766RHDJHGU7
+field1: Temp
+field2: pH
+
+
+RW4
+https://api.thingspeak.com/channels/1319774/feeds.csv?api_key=D9E8M0WKJU13ZSXN
+field1: Temp
+field2: pH
